@@ -1,0 +1,56 @@
+:root {
+  --main-color: #FECDAA;
+  --secondary-color: #FAFAC6;
+  --main-light: #FCFFEB;
+  --secondary-light: #F8FFF4;
+  --text-color: #474350;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.checklist-img {
+  margin-right: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-name {
+  font-family: 'Bungee Shade', cursive;
+}
+
+font-family: 'Bungee Outline', cursive;
+
+font-family: 'Bungee Shade', cursive;
+
+font-family: 'Roboto Mono', monospace;
