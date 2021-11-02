@@ -1,0 +1,26 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "to do list with the odin project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brirrito/ToDoList.git"
+  },
+  "author": "Brianna Guarino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brirrito/ToDoList/issues"
+  },
+  "homepage": "https://github.com/brirrito/ToDoList#readme",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "date-fns": "^2.25.0"
+  }
+}
