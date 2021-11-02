@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Roboto+Mono:ital,wght@0,100;0,600;1,100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f2451bd7b0.js" crossorigin="anonymous"></script>
   <title>To-Do List</title>
 </head>
 <body>
@@ -17,6 +18,37 @@
       <h1 class="page-name">To-Do List</h1>
     </div>
   </header>
+
+  <main class="main">
+    <nav class="nav" id="nav">
+      <div class="default-projects-list">
+        <button class="button-default-project" id="button-inbox-projects">
+          <i class="fas fa-inbox"></i>Inbox
+        </button>
+        <button class="button-default-project" id="button-today-projects">
+          <i class="fas fa-calendar-day"></i>Today
+        </button>
+        <button class="button-default-project" id="button-week-projects">
+          <i class="fas fa-calendar-week"></i>This Week
+        </button>
+      </div>
+
+      <h1 class="projects-title">Projects</h1>
+      <div class="projects-list" id="projects-list"></div>
+      <button class="button-add-project" id="button-add-project">
+        <i class="fas fa-plus"></i>
+        Add Project
+      </button>
+      <div class="add-project-popup" id="add-project-popup">
+        <input class="input-add-project-popup" id="input-add-project-popup" type="text"/>
+        <div class="add-project-popup-buttons">
+          <button class="button-add-project-popup" id="button-add-project-popup">Add</button>
+          <button class="button-cancel-project-popup" id="button-cancel-project-popup">Cancel</button>
+        </div>
+      </div>
+    </nav>
+    
+  </main>
 
   <a target="_blank" href="https://icons8.comundefined">Checklist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   <script src="main.js"></script>
