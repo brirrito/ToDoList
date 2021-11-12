@@ -1,3 +1,3 @@
 import UI from './UI'
 
-document.addEventListener('DOMContentLoaded', UI.loadHomepage)
+document.addEventListener('DOMContentLoaded', UI.loadHomePage)

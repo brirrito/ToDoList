@@ -1,13 +1,13 @@
 import { format } from 'date-fns'
 import Storage from './storage'
-import Project from '.project'
+import Project from './project'
 import Task from './task'
 
 export default class UI {
   static loadHomePage () {
     UI.loadProjects()
     UI.initProjectButtons()
-    UI.openProject('Inbox', document.getElementById('burron-inbox-projects'))
+    UI.openProject('Inbox', document.getElementById('button-inbox-projects'))
     document.addEventListener('keydown', UI.handleKeyboardInput)
   }
 
@@ -213,7 +213,7 @@ export default class UI {
     const projectButtons = document.getElementById('[data-project-button]')
     const openNavButton = document.getElementById('button-open-nav')
 
-    inboxProjectsButton.addEventListener('click', UI.openInbox.Tasks)
+    inboxProjectsButton.addEventListener('click', UI.openInboxTasks)
     todayProjectsButton.addEventListener('click', UI.openTodayTasks)
     weekProjectsButton.addEventListener('click', UI.openWeekTasks)
     projectButtons.forEach((projectButton) =>
@@ -439,7 +439,7 @@ export default class UI {
   }
 
   static openSetDateInput(taskButton) {
-    const dueDate = taskbutton.children[1].children[0]
+    const dueDate = taskButton.children[1].children[0]
     const dueDateInput = taskButton.children[1].chidlren[1]
 
     UI.closeAllPopups()
